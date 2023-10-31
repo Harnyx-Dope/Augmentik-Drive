@@ -1,0 +1,144 @@
+.header {
+   background-image: url('../assets/background.png');
+    padding: 0px 30px;
+    display: flex;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.24);
+    padding: 10px;
+    padding-inline: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Apply animation to the logo when hovered */
+.logo:hover {
+    animation: logoAnimation 0.5s ease;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+ 
+
+.header .left {
+    animation: logoAnimation 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.left-options {
+    transform: scale(1.1);
+    animation: logoAnimation 0.5s ease;
+    border-left: 2px solid #eff1f4;
+    display: flex;
+    gap: 10px;
+    padding-inline: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-option {
+     
+    transform: scale(1.1);
+    animation: logoAnimation 0.5s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.l-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .l-option:hover {
+    transform: scale(1.1);
+    background-color: rgba(113, 113, 113, 0.224);
+  }
+  
+.l-option:hover{
+    animation: logoAnimation 0.5s ease;
+    background-color: rgba(113, 113, 113, 0.224);
+}
+
+.header .right {
+    padding: 10px;
+}
+.login-btn:hover,
+.signup-btn:hover {
+  transform: scale(1.1);
+}
+
+.right button {
+    
+    animation: logoAnimation 0.5s ease;
+    outline: none;
+    border-radius: 5px;
+    padding: 6px 13px;
+    font-family: 'Poppins', sans-serif;
+    margin-inline: 10px;
+    cursor: pointer;
+}
+
+.right .login-btn {
+    border: 1px solid #d7d7d7;
+    background-color: white;
+    transition: 0.3s;
+}
+.right .login-btn:hover{
+    background-color: rgb(219, 219, 219);
+}
+.right .signup-btn {
+    border: none;
+    background-color: black;
+    color: white;
+    margin-right: 0;
+}
+
+@media (max-width:768px){
+    .left-options{
+        display: none;
+    }
+}
+/* Header.css */
+ 
+@keyframes logoAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  
+  
+  .left-options {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Trigger the animation when the header is hovered */
+  .header .left-options {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
+ 
+  .login-btn:hover,
+  .signup-btn:hover {
+    transform: scale(1.1);
+  }
+  
